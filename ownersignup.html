@@ -1,0 +1,80 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script type="text/javascript" src="ownersignup.js"></script> 
+	</head>
+<body>
+<center>
+<br>
+<div class="card" style="width: 40rem;  border-radius: 25px;background-color:#f0f5f5">
+<br>
+ <div class="card-body">
+<h1 class="card-title" style="text-align:center"><B>Sign Up Here</B></h1><br>
+<form name="Form2" action="ownersignup.php" method="get">
+<table>
+	<tr>
+        <td><b>Name: </b></td>
+        <td><input type=text name="f" id="f" style="width: 300px; height: 30px" onkeyup="validateName()" ></td>
+        <td><span id="name-error"></span></td>
+	</tr>
+	<tr>
+                   
+        <td><b>Email: </b></td>
+        <td><input type="email" name="e" style="width: 300px; height: 30px" onkeyup="validateEmail()" id="e"></td>
+        <td><span id="email-error"></span></td>
+
+	</tr>
+	<tr>
+		<td><b>Password: </b></td>
+		<td><input type=password name="p" id="p" value="" size=25 onkeyup="validatePassword()"></td>
+        <td><span id="password-error"></span></td>
+	</tr>
+	<tr>
+		<tr>
+		<td><b>Mobile No: </b></td>
+		<td><input type=tel name="m" id="m" value="" size=26 onkeyup="validateMobilenumber()"></td>
+        <td><span id="mobileno-error"></span></td>
+	</tr>
+	<tr>
+		<td><b>Occupation: </b></td>
+		<td><input type=textbox name="o" id="o" value="" size=25 onkeyup="validateOccupation()"></td>
+        <td><span id="occupation-error"></span></td>
+	</tr>
+	<tr>
+		<td><b>Number Of Houses: </b></td>
+		<td> <input type="range" name="hno" min="0" max="20" value="0" oninput="this.form.input.value=this.value" />
+			 <input type="number" name="input" min="0" id="input" max="20" value="0" oninput="this.form.hno.value=this.value" onkeyup="validateHousenum()"/>
+    </td>
+    <td><span id="housenum-error"></span></td>
+	</tr>
+	<tr>
+		<td><b>Country: </b></td>
+		<td><input type=textbox name="c" id="c" value="" size=25 onkeyup="validateCountry()"></td>
+        <td><span id="country-error"></span></td>
+	</tr>
+	<tr>
+		<td><b>State: </b></td>
+		<td> <input type=textbox name="s" id="s" value="" size=25 onkeyup="validateState()"></td>
+        <td><span id="state-error"></span></td>
+	</tr>
+	<tr>
+		<td><b>City:</b></td>
+		<td> <input type=textbox name="ci" id="ci" value="" size=25 onkeyup="validateCity()"></td>
+        <td><span id="city-error"></span></td>
+	</tr>
+	<tr>
+		<td><b>Address: </b></td>
+		<td><textarea id="a" name="a" rows="4" cols="20" style="resize: none;" onkeyup="validateAddress()"></textarea></td>
+        <td><span id="address-error"></span></td>
+	</tr>
+</table>
+<br>
+<input type=submit value="Sign Up" class="btn btn-primary" name="submit">
+</form><br>
+<a href="signin.html"><b>Already member Sign in here</b></a><br><br>
+ </div></div>
+</body>
+
+</html>
