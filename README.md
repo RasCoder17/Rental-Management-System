@@ -1,7 +1,9 @@
 **Aim of the Project**
+
 The primary aim of this project is to implement a property management system through a website, focusing on creating an online user interface for users to buy, rent, and sell properties such as flats, offices, plots, etc.
 
 **Software Requirements**
+
 HTML, CSS, JavaScript
 PHP and MySQL
 Server: XAMPP server
